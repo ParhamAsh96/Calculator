@@ -1,47 +1,54 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
+<script></script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+  <div id="frame">
+    <ul>
+      <li>
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>/</button>
+      </li>
+      <li>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+        <button>X</button>
+      </li>
+      <li>
+        <button>7</button>
+        <button>8</button>
+        <button>9</button>
+        <button>-</button>
+      </li>
+      <li>
+        <button><</button>
+        <button>0</button>
+        <button>=</button>
+        <button>+</button>
+      </li>
+    </ul>
+  </div>
 </template>
 
 <style scoped>
-header {
-  line-height: 1.5;
+#frame ul {
+  list-style: none;
+  padding: 0;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+#frame {
+  margin: auto;
+  text-align: center;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+#frame button {
+  font-size: 50px;
+  width: 10%;
+  height: 10%;
+  background-color: gray;
+  color: white;
+  padding: 3%;
+  margin: auto;
 }
 </style>
