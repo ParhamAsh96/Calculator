@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 <script>
 export default {
   data() {
@@ -84,6 +86,7 @@ export default {
 #frame ul {
   list-style: none;
   padding: 0;
+  margin: auto;
 }
 
 #frame {
