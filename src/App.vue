@@ -20,40 +20,9 @@ export default {
 </script>
 
 <template>
-  <!--
-  <div id="frame">
+  <div>
     <ul>
-      <li id="screen">#</li>
-      <li>
-        <button>{{ one }}</button>
-        <button>2</button>
-        <button>3</button>
-        <button>/</button>
-      </li>
-      <li>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>x</button>
-      </li>
-      <li>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>-</button>
-      </li>
-      <li>
-        <button><</button>
-        <button>0</button>
-        <button>=</button>
-        <button>+</button>
-      </li>
-    </ul>
-  </div>
--->
-  <div id="frame">
-    <ul>
-      <li id="screen">{{ display }}</li>
+      <li>{{ display }}</li>
       <li>
         <button v-for="item of rowOne" :key="item" @click="handleInput(item)">
           {{ item }}
@@ -79,6 +48,7 @@ export default {
 </template>
 
 <style scoped>
+/*
 #frame .red {
   color: red;
 }
@@ -113,4 +83,5 @@ export default {
   padding: 3%;
   margin: auto;
 }
+  */
 </style>
